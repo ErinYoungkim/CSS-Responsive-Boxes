@@ -1,3 +1,46 @@
 body {
   background: blanchedalmond;
 }
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  font-size: 3em;
+  text-align: center;
+  gap: 10px;
+}
+
+.a{
+  background: gray;
+  flex-grow: 1;
+}
+
+.b {
+  display: flex;
+  min-height: 70vh;
+  background: lightgray;
+  justify-content: center;
+}
+
+.c {
+  background: darkslategray;
+  flex-grow: 1;
+} 
+
+ @media (min-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: row; 
+    gap: 10px;
+  }
+
+  .a {
+    width: 100%;
+  }
+
+  .b {
+    width: 65vw;
+  }
+
+} 
